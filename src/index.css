@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  --font-gilroy: "Gilroy", sans-serif;
+  --font-chronicle: "Chronicle-Display", serif;
+}
+
+@font-face {
+  font-family: var(--font-gilroy);
+  src: url("/Fonts/Gilroy.Bold.woff") format("woff"),
+    url("/public/Fonts/Gilroy/ofont.ru_Gilroy.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: var(--font-chronicle);
+  src: url("/public/Fonts/Chronicle-display/Chronicle Display Semibold.otf")
+    format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@layer base {
+  .font-gilroy {
+    font-family: var(--font-gilroy);
+  }
+
+  .font-chronicle {
+    font-family: var(--font-chronicle);
+  }
+}
